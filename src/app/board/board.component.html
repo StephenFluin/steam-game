@@ -1,0 +1,8 @@
+<div style="width:600px;height:600px;background-color:lightgrey;">
+	<span *ngFor="let node of nodes" style="position:relative" [ngStyle]="{'width.px':300,'left.px':node.x,'top.px':node.y}">
+		X
+  </span>
+  <span *ngFor="let link of renderLinks" 
+  style="position:relative" 
+  [ngStyle]="link.style">-</span>
+	</div>
